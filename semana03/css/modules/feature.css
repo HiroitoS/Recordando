@@ -1,0 +1,33 @@
+.features{
+    display: grid;
+    grid-template-columns: 340px 340px;
+    justify-content: center;
+    gap: 5rem;
+    background-color: var(--primary-dark-blue-main);
+}
+
+@media (max-width:768px){ /* SE APLICA A DISPOSITIVOS COMO TABLETS Y CELULARES*/
+    .features{
+        grid-template-columns: 340px;
+    }
+}
+
+.feature{
+    /* text-align: center; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+.feature__title{
+    font-family: var(--font-primary);
+    /* border: 1px solid red; */
+    /* margin-top: 1.3rem; */
+}
+
+.feature__text{
+    font-family: var(--font-secondary);
+    /* margin-top: 1rem; */
+}
