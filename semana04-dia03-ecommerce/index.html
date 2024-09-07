@@ -7,33 +7,51 @@
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-  <header class="header wrapper">
+  <header class="header wrapper">    
     <div class="header__wrapper">
       <img class="header__menu" src="./images/icon-menu.svg" alt=""/>
       <img class="header__logo" src="./images/logo.svg" alt=""/>
+      <nav class="header__links">
+        <a href="#">Collections</a>          
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
     </div>    
-    <nav style="display: none;">
-      Collections
-      Men
-      Women
-      About
-      Contact
-    </nav>
+   
+    
+    <!-- EMMET -->
     <div class="header__wrapper">
       <img class="header__cart" src="./images/icon-cart.svg" alt=""/>
-      <img class="header__avatar" src="./images/image-avatar.png" alt="" width="32" height="32">
+      <img class="header__avatar" src="./images/image-avatar.png" alt="" width="40" height="32">
     </div>
   </header>
 
   <main>
-    <section class="product-detail wrapper flex">
+    <section class="product-detail wrapper">
       <section class="gallery">
         <div class="gallery__prev">
           <img src="./images/icon-previous.svg" alt=""/>
         </div>
-        <img src="./images/image-product-1.jpg" alt=""/>
+        <img class="gallery__image" src="./images/image-product-1.jpg" alt=""/>
         <div class="gallery__next">
           <img src="./images/icon-next.svg" alt=""/>
+        </div>
+        <div class="gallery-product-thumbnails">
+          <figure class="gallery-product-thumbnails--active">
+            <img src="./images/image-product-1-thumbnail.jpg" alt="" width="80" height="80"/>
+          </figure>
+          <figure>
+            <img src="./images/image-product-2-thumbnail.jpg" alt="" width="80" height="80"/>
+          </figure>
+          <figure>
+            <img src="./images/image-product-3-thumbnail.jpg" alt="" width="80" height="80"/>
+          </figure>
+          <figure>
+            <img src="./images/image-product-4-thumbnail.jpg" alt="" width="80" height="80"/>
+          </figure>
+
         </div>
       </section>
       <section class="product">
@@ -52,7 +70,8 @@
           <span class="product__price-with-discount">$250.00</span>
         </div>
   
-        <div class="product__qty">
+        <div class="product-actions">
+          <div class="product__qty">
             <button>
               <img src="./images/icon-minus.svg" alt=""/>
             </button>
@@ -66,6 +85,7 @@
             
             Add to cart
           </button>
+        </div>
       </section>
     </section>
   </main>
